@@ -1008,5 +1008,25 @@
     ],
     "notes": "All parameters within normal limits.",
     "created_at": "2026-08-26T13:23:50.976607+00:00"
+  },
+  "mh_bee49535": {
+    "id": "mh_bee49535",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-26T13:29:17.162157+00:00"
   }
 }

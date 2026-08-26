@@ -9,7 +9,7 @@
     "meal_relation": "After Food",
     "channel": "Voice Call & Push",
     "is_active": true,
-    "next_trigger": "2026-08-26T15:23:50.067855+00:00"
+    "next_trigger": "2026-08-26T15:29:16.177918+00:00"
   },
   "rem_002": {
     "id": "rem_002",
@@ -21,6 +21,6 @@
     "meal_relation": "With Morning Meal",
     "channel": "Voice Call & Push",
     "is_active": true,
-    "next_trigger": "2026-08-26T15:53:50.067873+00:00"
+    "next_trigger": "2026-08-26T15:59:16.177935+00:00"
   }
 }
