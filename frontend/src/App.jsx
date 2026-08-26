@@ -24,16 +24,17 @@ import DoctorDashboard from './components/DoctorDashboard';
 import HospitalAdminDashboard from './components/HospitalAdminDashboard';
 import WelcomeScreen from './components/WelcomeScreen';
 import RoleRegistrationModal from './components/RoleRegistrationModal';
+import HealthFlowLandingPage from './components/landing/HealthFlowLandingPage';
 import { 
   Sparkles, LayoutDashboard, Award, Stethoscope, Scan, QrCode, 
   Pill, UserCheck, Building2, Calendar, Droplet, 
-  FolderLock, Bell, Server, UserPlus, Activity
+  FolderLock, Bell, Server, UserPlus, Activity, Globe
 } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState('en');
   const [role, setRole] = useState('Patient');
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState('landing');
   const [emergencyOpen, setEmergencyOpen] = useState(false);
   const [preselectedDoctor, setPreselectedDoctor] = useState(null);
   const [showWelcomeScreen, setShowWelcomeScreen] = useState(false);
@@ -43,6 +44,7 @@ export default function App() {
 
   // Role-Based Navigation Config
   const ALL_NAV_ITEMS = [
+    { id: 'landing', label: '✨ Overview & Impact', icon: <Globe size={18} />, roles: ['Patient', 'Doctor', 'HospitalAdmin', 'Pharmacist', 'DataAdmin'] },
     { id: 'home', label: 'Dashboard', icon: <LayoutDashboard size={18} />, roles: ['Patient', 'Doctor', 'HospitalAdmin', 'Pharmacist', 'DataAdmin'] },
     { id: 'register', label: t.nav_register || "Patient Registration", icon: <UserPlus size={18} />, roles: ['Patient', 'DataAdmin'] },
     { id: 'doctor_portal', label: 'Doctor Portal', icon: <Stethoscope size={18} />, roles: ['Doctor', 'DataAdmin'] },
@@ -116,10 +118,14 @@ export default function App() {
         
         {/* Onboarding Welcome Screen */}
         {showWelcomeScreen ? (
-          <WelcomeScreen
-            t={t}
+          <HealthFlowLandingPage
             onSelectRole={handleRoleSelectedFromWelcome}
-            onSignInClick={handleRoleSelectedFromWelcome}
+            onOpenEmergencyModal={() => setEmergencyOpen(true)}
+            onNavigateTab={(tab) => {
+              setShowWelcomeScreen(false);
+              setActiveTab(tab);
+            }}
+            t={t}
           />
         ) : (
           <>
@@ -140,6 +146,14 @@ export default function App() {
             </div>
 
         {/* Dynamic Module Rendering */}
+        {activeTab === 'landing' && (
+          <HealthFlowLandingPage
+            onSelectRole={handleRoleSelectedFromWelcome}
+            onOpenEmergencyModal={() => setEmergencyOpen(true)}
+            onNavigateTab={(tab) => setActiveTab(tab)}
+            t={t}
+          />
+        )}
         {activeTab === 'home' && (
           <DashboardHome
             t={t}
