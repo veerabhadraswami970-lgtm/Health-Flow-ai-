@@ -1,0 +1,38 @@
+{
+  "src_pmjay_nha": {
+    "source_id": "src_pmjay_nha",
+    "source_name": "National Health Authority - PMJAY Master Portal",
+    "source_url": "https://pmjay.gov.in",
+    "source_type": "Government Portal",
+    "license_notes": "Open Government Data (OGD) License India",
+    "retrieved_at": "2026-08-01T00:00:00Z",
+    "verified_at": "2026-08-01T00:00:00Z",
+    "version": "v3.4.0",
+    "checksum_sha256": "131cb29f1b53938cf6bb1a23e4d996aa8a7ac4efbf6ce5befd471275b3b35450",
+    "status": "VERIFIED"
+  },
+  "src_eraktkosh": {
+    "source_id": "src_eraktkosh",
+    "source_name": "Ministry of Health & Family Welfare - e-RaktKosh",
+    "source_url": "https://eraktkosh.mohfw.gov.in",
+    "source_type": "e-RaktKosh",
+    "license_notes": "National Blood Transfusion Council Official Public Feed",
+    "retrieved_at": "2026-08-10T00:00:00Z",
+    "verified_at": "2026-08-10T00:00:00Z",
+    "version": "v2.1.0",
+    "checksum_sha256": "5c098b9f66af74b31b1df921ed6d5d57322a5f1af7d6ba3f816c6fbdfd1e217a",
+    "status": "VERIFIED"
+  },
+  "src_cdsco_nlem": {
+    "source_id": "src_cdsco_nlem",
+    "source_name": "Central Drugs Standard Control Organisation (CDSCO)",
+    "source_url": "https://cdsco.gov.in",
+    "source_type": "CDSCO Pharmacopoeia",
+    "license_notes": "National List of Essential Medicines & Drug Controller General of India",
+    "retrieved_at": "2026-07-25T00:00:00Z",
+    "verified_at": "2026-07-25T00:00:00Z",
+    "version": "v4.0.1",
+    "checksum_sha256": "06604963d3cc91fc478a559c05a032bea111c5478d3697d19805af85ff773ebd",
+    "status": "VERIFIED"
+  }
+}

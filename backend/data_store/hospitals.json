@@ -1,0 +1,138 @@
+{
+  "hosp_nims_hyd": {
+    "id": "hosp_nims_hyd",
+    "hfr_id": "IN36100002",
+    "name": "Nizam's Institute of Medical Sciences (NIMS)",
+    "facility_type": "Government Super Specialty & Autonomous University",
+    "address": "Punjagutta, Hyderabad, Telangana - 500082",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "pincode": "500082",
+    "latitude": 17.4239,
+    "longitude": 78.4526,
+    "helpline": "040-23489000",
+    "emergency_contact": "040-23489244",
+    "has_24_7_emergency": true,
+    "has_blood_bank": true,
+    "has_dialysis": true,
+    "has_icu": true,
+    "schemes_empaneled": [
+      "pmjay_central",
+      "aarogyasri_ap_tg",
+      "ran_central",
+      "pmndp_dialysis"
+    ],
+    "specialties": [
+      "Cardiology",
+      "Neurosurgery",
+      "Nephrology",
+      "Oncology",
+      "Orthopedics",
+      "Emergency Trauma"
+    ],
+    "is_abdm_verified": true,
+    "total_beds": 1400,
+    "status": "Operational"
+  },
+  "hosp_aiims_delhi": {
+    "id": "hosp_aiims_delhi",
+    "hfr_id": "IN07100001",
+    "name": "All India Institute of Medical Sciences (AIIMS)",
+    "facility_type": "Central Government Apex Referral Medical Institute",
+    "address": "Sri Aurobindo Marg, Ansari Nagar, New Delhi - 110029",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "pincode": "110029",
+    "latitude": 28.5672,
+    "longitude": 77.21,
+    "helpline": "011-26588500",
+    "emergency_contact": "011-26594405",
+    "has_24_7_emergency": true,
+    "has_blood_bank": true,
+    "has_dialysis": true,
+    "has_icu": true,
+    "schemes_empaneled": [
+      "pmjay_central",
+      "ran_central",
+      "pmndp_dialysis"
+    ],
+    "specialties": [
+      "Cardiology",
+      "Oncology",
+      "Endocrinology",
+      "Organ Transplant",
+      "Trauma & Emergency",
+      "Neurology"
+    ],
+    "is_abdm_verified": true,
+    "total_beds": 2500,
+    "status": "Operational"
+  },
+  "hosp_kgh_vizag": {
+    "id": "hosp_kgh_vizag",
+    "hfr_id": "IN28100003",
+    "name": "King George Hospital (KGH)",
+    "facility_type": "Government General & Teaching Hospital",
+    "address": "Maharanipeta, Visakhapatnam, Andhra Pradesh - 530002",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "pincode": "530002",
+    "latitude": 17.7088,
+    "longitude": 83.3056,
+    "helpline": "0891-2564891",
+    "emergency_contact": "0891-2564895",
+    "has_24_7_emergency": true,
+    "has_blood_bank": true,
+    "has_dialysis": true,
+    "has_icu": true,
+    "schemes_empaneled": [
+      "pmjay_central",
+      "aarogyasri_ap_tg",
+      "pmndp_dialysis",
+      "ran_central"
+    ],
+    "specialties": [
+      "General Medicine",
+      "General Surgery",
+      "Pediatrics",
+      "Obstetrics & Gynecology",
+      "Emergency Casualty"
+    ],
+    "is_abdm_verified": true,
+    "total_beds": 1250,
+    "status": "Operational"
+  },
+  "hosp_victoria_blr": {
+    "id": "hosp_victoria_blr",
+    "hfr_id": "IN29100005",
+    "name": "Victoria Hospital / BMCRI",
+    "facility_type": "Government Multi-specialty Teaching Hospital",
+    "address": "Fort Road, near City Market, Bengaluru, Karnataka - 560002",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560002",
+    "latitude": 12.9634,
+    "longitude": 77.5752,
+    "helpline": "080-26701150",
+    "emergency_contact": "080-26701155",
+    "has_24_7_emergency": true,
+    "has_blood_bank": true,
+    "has_dialysis": true,
+    "has_icu": true,
+    "schemes_empaneled": [
+      "pmjay_central",
+      "ran_central",
+      "pmndp_dialysis"
+    ],
+    "specialties": [
+      "Pulmonology",
+      "Trauma Care",
+      "Burns Center",
+      "General Surgery",
+      "Nephrology"
+    ],
+    "is_abdm_verified": true,
+    "total_beds": 1000,
+    "status": "Operational"
+  }
+}

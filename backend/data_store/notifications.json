@@ -1,0 +1,26 @@
+{
+  "rem_001": {
+    "id": "rem_001",
+    "patient_id": "patient_ravi_kumar",
+    "prescription_id": "rx_001_seed",
+    "medicine_name": "Telma 40 (Telmisartan 40mg)",
+    "dosage": "1 Tablet",
+    "time_of_day": "08:00 AM",
+    "meal_relation": "After Food",
+    "channel": "Voice Call & Push",
+    "is_active": true,
+    "next_trigger": "2026-08-26T13:17:23.241609+00:00"
+  },
+  "rem_002": {
+    "id": "rem_002",
+    "patient_id": "patient_ravi_kumar",
+    "prescription_id": "rx_001_seed",
+    "medicine_name": "Glycomet 500 SR (Metformin 500mg)",
+    "dosage": "1 Tablet",
+    "time_of_day": "08:30 AM",
+    "meal_relation": "With Morning Meal",
+    "channel": "Voice Call & Push",
+    "is_active": true,
+    "next_trigger": "2026-08-26T13:47:23.241631+00:00"
+  }
+}

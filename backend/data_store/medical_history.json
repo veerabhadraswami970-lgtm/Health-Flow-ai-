@@ -1,0 +1,792 @@
+{
+  "mh_001": {
+    "id": "mh_001",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_nims_hyd",
+    "hospital_name": "NIMS Hyderabad",
+    "doctor_id": "doc_ramesh_varma",
+    "doctor_name": "Dr. Ramesh Varma",
+    "date": "2026-06-15",
+    "treatment_type": "OPD Consultation",
+    "diagnosis": "Routine Cardiology Follow-up — Stable Angina under control",
+    "medicines": [
+      "Ecosprin 75mg",
+      "Atorvastatin 20mg",
+      "Metoprolol 50mg"
+    ],
+    "procedures": [
+      "12-Lead ECG",
+      "Blood Pressure Monitoring"
+    ],
+    "notes": "Patient vitals stable. Continue current medications. Review in 3 months.",
+    "created_at": "2026-06-15T10:30:00Z"
+  },
+  "mh_002": {
+    "id": "mh_002",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_apollo_hyd",
+    "hospital_name": "Apollo Hospitals, Jubilee Hills",
+    "doctor_id": "doc_ananya_sen",
+    "doctor_name": "Dr. Ananya Sen",
+    "date": "2026-08-01",
+    "treatment_type": "Lab Test",
+    "diagnosis": "HbA1c 6.8% — Type 2 Diabetes under good glycemic control",
+    "medicines": [
+      "Glycomet GP 2 (Metformin + Glimepiride)",
+      "Telma 40mg"
+    ],
+    "procedures": [
+      "HbA1c Panel",
+      "Lipid Profile",
+      "Serum Creatinine"
+    ],
+    "notes": "Diabetes well-controlled. Continue Glycomet GP 2. Recheck HbA1c in 6 months.",
+    "created_at": "2026-08-01T09:00:00Z"
+  },
+  "mh_003": {
+    "id": "mh_003",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_care_vizag",
+    "hospital_name": "CARE Hospitals, Visakhapatnam",
+    "doctor_id": "doc_vikram_reddy",
+    "doctor_name": "Dr. Vikram Reddy",
+    "date": "2025-12-10",
+    "treatment_type": "Inpatient",
+    "diagnosis": "Acute bronchitis — resolved after 3-day inpatient treatment",
+    "medicines": [
+      "Augmentin 625mg",
+      "Montelukast 10mg",
+      "Levolin Inhaler"
+    ],
+    "procedures": [
+      "Chest X-Ray",
+      "Pulmonary Function Test",
+      "Sputum Culture"
+    ],
+    "notes": "Discharged after 3 days. Complete antibiotic course. Follow-up in 2 weeks.",
+    "created_at": "2025-12-10T14:00:00Z"
+  },
+  "mh_004": {
+    "id": "mh_004",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_nims_hyd",
+    "hospital_name": "NIMS Hyderabad",
+    "doctor_id": "doc_ramesh_varma",
+    "doctor_name": "Dr. Ramesh Varma",
+    "date": "2025-03-20",
+    "treatment_type": "Surgery",
+    "diagnosis": "Coronary Angioplasty — Single stent placement in LAD artery",
+    "medicines": [
+      "Clopidogrel 75mg",
+      "Ecosprin 75mg",
+      "Rosuvastatin 10mg",
+      "Pantoprazole 40mg"
+    ],
+    "procedures": [
+      "Coronary Angiography",
+      "PTCA with Stent (Drug-Eluting)"
+    ],
+    "notes": "Successful single-vessel stent placement. Dual antiplatelet therapy for 12 months.",
+    "created_at": "2025-03-20T08:00:00Z"
+  },
+  "mh_6865c706": {
+    "id": "mh_6865c706",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T18:58:59.126111+00:00"
+  },
+  "mh_47102314": {
+    "id": "mh_47102314",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T18:59:22.864630+00:00"
+  },
+  "mh_607068bb": {
+    "id": "mh_607068bb",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T18:59:45.099637+00:00"
+  },
+  "mh_ce27c4cd": {
+    "id": "mh_ce27c4cd",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T19:00:55.611196+00:00"
+  },
+  "mh_0b88aa20": {
+    "id": "mh_0b88aa20",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T19:29:17.510947+00:00"
+  },
+  "mh_2d9eb6e9": {
+    "id": "mh_2d9eb6e9",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T19:29:34.176583+00:00"
+  },
+  "mh_37d6c15d": {
+    "id": "mh_37d6c15d",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-19T19:29:58.668019+00:00"
+  },
+  "mh_9f9af56c": {
+    "id": "mh_9f9af56c",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T03:02:25.366542+00:00"
+  },
+  "mh_e2546a7a": {
+    "id": "mh_e2546a7a",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T03:06:02.381930+00:00"
+  },
+  "mh_3bbb60b3": {
+    "id": "mh_3bbb60b3",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T03:18:46.243446+00:00"
+  },
+  "mh_1f110f75": {
+    "id": "mh_1f110f75",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:22:14.046572+00:00"
+  },
+  "mh_c56aaaa1": {
+    "id": "mh_c56aaaa1",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:26:09.572642+00:00"
+  },
+  "mh_63c7df6e": {
+    "id": "mh_63c7df6e",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:35:07.337245+00:00"
+  },
+  "mh_fab575f2": {
+    "id": "mh_fab575f2",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:39:36.088860+00:00"
+  },
+  "mh_00de04c2": {
+    "id": "mh_00de04c2",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:42:18.690567+00:00"
+  },
+  "mh_13b44930": {
+    "id": "mh_13b44930",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:42:35.093288+00:00"
+  },
+  "mh_093871e0": {
+    "id": "mh_093871e0",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:43:05.083604+00:00"
+  },
+  "mh_b8551624": {
+    "id": "mh_b8551624",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:43:25.901282+00:00"
+  },
+  "mh_530e46ac": {
+    "id": "mh_530e46ac",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T04:49:33.403100+00:00"
+  },
+  "mh_8bb34c21": {
+    "id": "mh_8bb34c21",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T05:06:13.997434+00:00"
+  },
+  "mh_8831ce44": {
+    "id": "mh_8831ce44",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T05:37:46.428872+00:00"
+  },
+  "mh_2b886e58": {
+    "id": "mh_2b886e58",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T05:42:52.909025+00:00"
+  },
+  "mh_34fd801c": {
+    "id": "mh_34fd801c",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T05:43:05.879433+00:00"
+  },
+  "mh_06fe1880": {
+    "id": "mh_06fe1880",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T05:44:01.019821+00:00"
+  },
+  "mh_df2337c0": {
+    "id": "mh_df2337c0",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T05:53:53.345409+00:00"
+  },
+  "mh_c8c1be59": {
+    "id": "mh_c8c1be59",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-20T07:56:57.769964+00:00"
+  },
+  "mh_a4cf5b13": {
+    "id": "mh_a4cf5b13",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-21T04:30:01.349829+00:00"
+  },
+  "mh_7713552c": {
+    "id": "mh_7713552c",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-21T04:30:19.395639+00:00"
+  },
+  "mh_533b8433": {
+    "id": "mh_533b8433",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-24T16:24:27.945603+00:00"
+  },
+  "mh_49120ee0": {
+    "id": "mh_49120ee0",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-24T16:34:26.907325+00:00"
+  },
+  "mh_e04a8943": {
+    "id": "mh_e04a8943",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-24T16:34:53.823631+00:00"
+  },
+  "mh_a5df8f50": {
+    "id": "mh_a5df8f50",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-24T17:10:13.591552+00:00"
+  },
+  "mh_6136b4aa": {
+    "id": "mh_6136b4aa",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-24T17:13:16.294058+00:00"
+  },
+  "mh_f8f1dd7a": {
+    "id": "mh_f8f1dd7a",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-24T17:17:08.417484+00:00"
+  },
+  "mh_779bb8a2": {
+    "id": "mh_779bb8a2",
+    "patient_id": "patient_ravi_kumar",
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "doctor_id": "doc_test_01",
+    "doctor_name": "Dr. Test Specialist",
+    "date": "2026-08-15",
+    "treatment_type": "Specialist Consultation",
+    "diagnosis": "Preventive cardiac screening - normal",
+    "medicines": [
+      "Multivitamin Tablet"
+    ],
+    "procedures": [
+      "Stress ECG",
+      "2D Echo"
+    ],
+    "notes": "All parameters within normal limits.",
+    "created_at": "2026-08-26T11:17:24.400479+00:00"
+  }
+}

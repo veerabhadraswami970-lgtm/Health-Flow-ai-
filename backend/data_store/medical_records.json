@@ -1,0 +1,53 @@
+{
+  "rec_001_ecg": {
+    "id": "rec_001_ecg",
+    "patient_id": "patient_ravi_kumar",
+    "record_type": "DiagnosticSummary",
+    "title": "12-Lead ECG Report (Normal Sinus Rhythm)",
+    "facility_name": "NIMS Hyderabad",
+    "doctor_name": "Dr. Ramesh Varma",
+    "date": "2026-07-15",
+    "summary": "Sinus rhythm with regular PR interval, no acute ST-T changes. Normal Axis.",
+    "details": {
+      "hr": 74,
+      "qt_interval": "410ms",
+      "interpretation": "Within Normal Limits"
+    },
+    "document_url": "/reports/ecg_sample.pdf",
+    "created_at": "2026-07-15T11:00:00Z"
+  },
+  "rec_002_hba1c": {
+    "id": "rec_002_hba1c",
+    "patient_id": "patient_ravi_kumar",
+    "record_type": "LabReport",
+    "title": "Comprehensive Diabetic Panel & HbA1c",
+    "facility_name": "Apollo Diagnostics, Hyderabad",
+    "doctor_name": "Dr. Ananya Sen",
+    "date": "2026-08-01",
+    "summary": "HbA1c: 6.8% (Target < 7.0%). Fasting Blood Glucose: 118 mg/dL. Serum Creatinine: 0.9 mg/dL.",
+    "details": {
+      "hba1c": 6.8,
+      "fbs": 118,
+      "creatinine": 0.9,
+      "egfr": 95
+    },
+    "document_url": "/reports/hba1c_panel.pdf",
+    "created_at": "2026-08-01T09:30:00Z"
+  },
+  "rec_003_vax": {
+    "id": "rec_003_vax",
+    "patient_id": "patient_ravi_kumar",
+    "record_type": "Immunization",
+    "title": "COVID-19 & Influenza Booster Certificate",
+    "facility_name": "Primary Health Centre, Hyderabad",
+    "doctor_name": "Medical Officer",
+    "date": "2025-11-20",
+    "summary": "Completed Quadrivalent Inactivated Influenza & Annual Precautionary Booster.",
+    "details": {
+      "vaccine_name": "FluQuadri + Covishield Precaution",
+      "batch": "FL8902A"
+    },
+    "document_url": "/reports/vaccination.pdf",
+    "created_at": "2025-11-20T10:00:00Z"
+  }
+}

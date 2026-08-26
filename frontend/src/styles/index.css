@@ -1,0 +1,651 @@
+@charset "UTF-8";
+@import 'leaflet/dist/leaflet.css';
+
+/* ==========================================================================
+   HEALTHFLOW AI — 10X DESIGN TOKEN SYSTEM
+   Spatial Healthcare in the 3rd Dimension
+   ========================================================================== */
+
+:root {
+  /* Surface & Base Palette */
+  --hf-bg-base: #060b14;
+  --hf-bg-surface: #0b1325;
+  --hf-bg-elevated: rgba(16, 26, 48, 0.75);
+  --hf-bg-glass: rgba(14, 23, 42, 0.65);
+  --hf-bg-glass-strong: rgba(18, 30, 56, 0.85);
+  --hf-bg-glass-subtle: rgba(255, 255, 255, 0.03);
+  --hf-bg-input: rgba(5, 10, 20, 0.55);
+
+  /* Borders & Highlights */
+  --hf-border-subtle: rgba(255, 255, 255, 0.08);
+  --hf-border-glass: rgba(0, 242, 254, 0.15);
+  --hf-border-active: rgba(0, 201, 167, 0.5);
+  --hf-border-glow: rgba(0, 242, 254, 0.4);
+
+  /* Primary Clinical Accents (Deep Teal, Cyan, Indigo) */
+  --hf-primary: #00c9a7;
+  --hf-primary-hover: #10e0bb;
+  --hf-primary-soft: rgba(0, 201, 167, 0.15);
+  --hf-primary-glow: rgba(0, 201, 167, 0.35);
+
+  --hf-cyan: #00f2fe;
+  --hf-cyan-soft: rgba(0, 242, 254, 0.12);
+  --hf-cyan-glow: rgba(0, 242, 254, 0.35);
+
+  --hf-blue: #3b82f6;
+  --hf-blue-soft: rgba(59, 130, 246, 0.15);
+  --hf-indigo: #6366f1;
+  --hf-indigo-soft: rgba(99, 102, 241, 0.15);
+
+  /* State Accents */
+  --hf-success: #10b981;
+  --hf-success-soft: rgba(16, 185, 129, 0.15);
+  --hf-warning: #f59e0b;
+  --hf-warning-soft: rgba(245, 158, 11, 0.15);
+  --hf-danger: #ff4b63;
+  --hf-danger-glow: rgba(255, 75, 99, 0.45);
+  --hf-danger-soft: rgba(255, 75, 99, 0.15);
+
+  /* Typography Colors */
+  --hf-text-primary: #f8fafc;
+  --hf-text-secondary: #94a3b8;
+  --hf-text-muted: #64748b;
+  --hf-text-inverse: #030712;
+
+  /* Typography Families */
+  --hf-font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --hf-font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --hf-font-mono: 'JetBrains Mono', monospace;
+
+  /* Radii */
+  --hf-radius-sm: 8px;
+  --hf-radius-md: 14px;
+  --hf-radius-lg: 20px;
+  --hf-radius-xl: 28px;
+  --hf-radius-full: 9999px;
+
+  /* 3D Shadows & Lighting */
+  --hf-shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --hf-shadow-md: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+  --hf-shadow-lg: 0 20px 50px -15px rgba(0, 0, 0, 0.75), 0 0 35px -10px rgba(0, 242, 254, 0.1);
+  --hf-shadow-glow-cyan: 0 0 35px -5px var(--hf-cyan-glow);
+  --hf-shadow-glow-teal: 0 0 35px -5px var(--hf-primary-glow);
+  --hf-shadow-emergency: 0 0 40px -5px var(--hf-danger-glow);
+
+  /* Transitions */
+  --hf-ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --hf-transition-fast: 150ms var(--hf-ease-spring);
+  --hf-transition-normal: 250ms var(--hf-ease-spring);
+  --hf-transition-smooth: 400ms var(--hf-ease-spring);
+
+  /* Legacy variable mappings for existing components */
+  --bg-primary: var(--hf-bg-base);
+  --bg-secondary: var(--hf-bg-surface);
+  --bg-card: var(--hf-bg-glass);
+  --bg-card-hover: var(--hf-bg-elevated);
+  --bg-glass: var(--hf-bg-glass-subtle);
+  --border-subtle: var(--hf-border-subtle);
+  --border-active: var(--hf-border-active);
+  --text-primary: var(--hf-text-primary);
+  --text-secondary: var(--hf-text-secondary);
+  --text-muted: var(--hf-text-muted);
+  --accent-teal: var(--hf-primary);
+  --accent-teal-glow: var(--hf-primary-glow);
+  --accent-blue: var(--hf-blue);
+  --accent-indigo: var(--hf-indigo);
+  --accent-amber: var(--hf-warning);
+  --accent-rose: var(--hf-danger);
+  --accent-crimson: var(--hf-danger);
+  --radius-sm: var(--hf-radius-sm);
+  --radius-md: var(--hf-radius-md);
+  --radius-lg: var(--hf-radius-lg);
+  --radius-xl: var(--hf-radius-xl);
+  --radius-full: var(--hf-radius-full);
+  --font-heading: var(--hf-font-heading);
+  --font-body: var(--hf-font-body);
+  --shadow-card: var(--hf-shadow-md);
+  --shadow-glow: var(--hf-shadow-glow-teal);
+  --shadow-emergency: var(--hf-shadow-emergency);
+}
+
+/* ==========================================================================
+   GLOBAL RESET & SPATIAL ENVIRONMENT
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--hf-bg-base);
+  color: var(--hf-text-primary);
+  font-family: var(--hf-font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(0, 242, 254, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(0, 201, 167, 0.07) 0%, transparent 45%),
+    radial-gradient(circle at 50% 60%, rgba(99, 102, 241, 0.05) 0%, transparent 60%),
+    radial-gradient(circle at 20% 90%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Medical Spatial Grid Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--hf-font-heading);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  color: var(--hf-text-primary);
+}
+
+h1 { font-size: 2.25rem; line-height: 1.2; }
+h2 { font-size: 1.75rem; line-height: 1.25; }
+h3 { font-size: 1.35rem; line-height: 1.3; }
+h4 { font-size: 1.15rem; }
+
+p {
+  color: var(--hf-text-secondary);
+}
+
+/* ==========================================================================
+   GLASSMORPHISM & 3D SPATIAL CARDS
+   ========================================================================== */
+
+.glass-card, .hf-card {
+  background: var(--hf-bg-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--hf-border-subtle);
+  border-radius: var(--hf-radius-lg);
+  box-shadow: var(--hf-shadow-md);
+  transition: transform var(--hf-transition-normal), border-color var(--hf-transition-normal), box-shadow var(--hf-transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card:hover, .hf-card:hover {
+  border-color: rgba(0, 242, 254, 0.25);
+  transform: translateY(-4px);
+  box-shadow: var(--hf-shadow-lg);
+}
+
+/* 3D Physical Interactive Card */
+.hf-3d-card {
+  background: linear-gradient(135deg, rgba(18, 30, 56, 0.75) 0%, rgba(10, 18, 35, 0.85) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--hf-radius-xl);
+  box-shadow: var(--hf-shadow-md);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hf-3d-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(0, 242, 254, 0.5) 50%, transparent 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.hf-3d-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(0, 242, 254, 0.4);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 35px -5px rgba(0, 242, 254, 0.25);
+}
+
+.hf-3d-card:hover::before {
+  opacity: 1;
+}
+
+.hf-3d-card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+/* ==========================================================================
+   BUTTON DESIGN SYSTEM
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: var(--hf-radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--hf-transition-fast);
+  font-family: var(--hf-font-heading);
+  text-decoration: none;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00c9a7 0%, #00a887 100%);
+  color: #030712;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(0, 201, 167, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #10e0bb 0%, #00c9a7 100%);
+  box-shadow: 0 6px 25px rgba(0, 201, 167, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-cyan {
+  background: linear-gradient(135deg, #00f2fe 0%, #00a8ff 100%);
+  color: #030712;
+  font-weight: 700;
+  box-shadow: 0 4px 18px rgba(0, 242, 254, 0.35);
+}
+
+.btn-cyan:hover {
+  background: linear-gradient(135deg, #38f9d7 0%, #00f2fe 100%);
+  box-shadow: 0 6px 25px rgba(0, 242, 254, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--hf-text-primary);
+  border: 1px solid var(--hf-border-subtle);
+  backdrop-filter: blur(12px);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--hf-text-secondary);
+  border: none;
+}
+
+.btn-ghost:hover {
+  color: var(--hf-text-primary);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.btn-emergency {
+  background: linear-gradient(135deg, #ff4b63 0%, #d91c38 100%);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: var(--hf-shadow-emergency);
+  animation: hfEmergencyPulse 2.4s infinite;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@keyframes hfEmergencyPulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 75, 99, 0.6); }
+  60% { transform: scale(1.02); box-shadow: 0 0 0 16px rgba(255, 75, 99, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 75, 99, 0); }
+}
+
+/* ==========================================================================
+   BADGE & STATUS PILLS
+   ========================================================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--hf-radius-full);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.badge-verified {
+  background: rgba(0, 201, 167, 0.12);
+  color: #00c9a7;
+  border: 1px solid rgba(0, 201, 167, 0.35);
+}
+
+.badge-cyan {
+  background: rgba(0, 242, 254, 0.12);
+  color: #00f2fe;
+  border: 1px solid rgba(0, 242, 254, 0.35);
+}
+
+.badge-eligible {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-danger {
+  background: rgba(255, 75, 99, 0.15);
+  color: #ff4b63;
+  border: 1px solid rgba(255, 75, 99, 0.35);
+}
+
+.badge-central {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+}
+
+.badge-state {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+}
+
+/* ==========================================================================
+   FORM INPUTS & CONTROLS
+   ========================================================================== */
+
+.input-field, .select-field, textarea.input-field {
+  width: 100%;
+  padding: 12px 18px;
+  background: var(--hf-bg-input);
+  border: 1px solid var(--hf-border-subtle);
+  border-radius: var(--hf-radius-md);
+  color: var(--hf-text-primary);
+  font-family: var(--hf-font-body);
+  font-size: 0.95rem;
+  transition: all var(--hf-transition-fast);
+  outline: none;
+  backdrop-filter: blur(10px);
+}
+
+.input-field:focus, .select-field:focus, textarea.input-field:focus {
+  border-color: var(--hf-primary);
+  box-shadow: 0 0 0 3px var(--hf-primary-soft), 0 0 20px -5px var(--hf-primary-glow);
+  background: rgba(8, 16, 32, 0.75);
+}
+
+/* ==========================================================================
+   APP LAYOUT & NAVIGATION
+   ========================================================================== */
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 24px 80px 24px;
+}
+
+/* Navigation Tabs Hub Bar */
+.nav-scroll-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.nav-tabs {
+  display: inline-flex;
+  gap: 6px;
+  background: rgba(12, 20, 38, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 6px;
+  border-radius: var(--hf-radius-xl);
+  border: 1px solid var(--hf-border-subtle);
+  box-shadow: var(--hf-shadow-sm);
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--hf-radius-lg);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--hf-text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--hf-transition-fast);
+  user-select: none;
+}
+
+.tab-btn:hover {
+  color: var(--hf-text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, rgba(0, 201, 167, 0.2) 0%, rgba(0, 242, 254, 0.15) 100%);
+  color: #00f2fe;
+  border-color: rgba(0, 242, 254, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 201, 167, 0.2);
+}
+
+/* Waveform Animation for Voice */
+.voice-wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  height: 40px;
+}
+
+.wave-bar {
+  width: 4px;
+  height: 10px;
+  background: var(--hf-primary);
+  border-radius: 4px;
+  animation: waveAnim 1s ease-in-out infinite alternate;
+}
+
+.wave-bar:nth-child(2) { animation-delay: 0.2s; }
+.wave-bar:nth-child(3) { animation-delay: 0.4s; }
+.wave-bar:nth-child(4) { animation-delay: 0.6s; }
+.wave-bar:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes waveAnim {
+  0% { height: 8px; }
+  100% { height: 36px; }
+}
+
+/* ==========================================================================
+   3D AI LASER SCANNER & PRESCRIPTION EFFECTS
+   ========================================================================== */
+
+.hf-scanner-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--hf-radius-xl);
+  border: 2px dashed rgba(0, 242, 254, 0.35);
+  background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.05) 0%, rgba(10, 18, 35, 0.6) 100%);
+  transition: all 0.3s ease;
+}
+
+.hf-scanner-frame.scanning {
+  border-style: solid;
+  border-color: var(--hf-cyan);
+  box-shadow: 0 0 35px rgba(0, 242, 254, 0.3);
+}
+
+.hf-scanner-beam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent 0%, #00f2fe 50%, transparent 100%);
+  box-shadow: 0 0 20px 4px #00f2fe, 0 0 40px 10px rgba(0, 201, 167, 0.5);
+  animation: scanLaser 2.2s ease-in-out infinite alternate;
+  z-index: 10;
+}
+
+@keyframes scanLaser {
+  0% { top: 4%; opacity: 0.9; }
+  100% { top: 94%; opacity: 0.9; }
+}
+
+/* ==========================================================================
+   GRID LAYOUTS
+   ========================================================================== */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  .main-content {
+    padding: 16px 14px 60px 14px;
+  }
+}
+
+/* ==========================================================================
+   ANIMATIONS & ACCESSIBILITY
+   ========================================================================== */
+
+.animate-fade-in {
+  animation: hfFadeIn 0.35s var(--hf-ease-spring) forwards;
+}
+
+.animate-slide-up {
+  animation: hfSlideUp 0.4s var(--hf-ease-spring) forwards;
+}
+
+@keyframes hfFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes hfSlideUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.spin-animation {
+  animation: hfSpin 1.2s linear infinite;
+}
+
+@keyframes hfSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Shimmer Loader */
+.hf-skeleton {
+  background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.03) 75%);
+  background-size: 200% 100%;
+  animation: hfShimmer 1.8s infinite;
+  border-radius: var(--hf-radius-md);
+}
+
+@keyframes hfShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Reduced Motion Fallback */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hf-scanner-beam {
+    display: none;
+  }
+}
+
+/* Print Optimization for Digital Health Passes & Prescriptions */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .navbar, .nav-scroll-wrapper, footer, .btn, button {
+    display: none !important;
+  }
+  .hf-card, .hf-3d-card, .glass-card {
+    background: #ffffff !important;
+    border: 1px solid #000000 !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  h1, h2, h3, h4, h5, span, p, strong, code {
+    color: #000000 !important;
+  }
+}
+

@@ -1,0 +1,212 @@
+{
+  "patient_ravi_kumar": {
+    "patient_id": "patient_ravi_kumar",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-21T04:26:47.649465+00:00"
+  },
+  "patient_test_settings_new": {
+    "patient_id": "patient_test_settings_new",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-21T04:28:34.802917+00:00"
+  },
+  "patient_test_a3ddb9fd": {
+    "patient_id": "patient_test_a3ddb9fd",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-21T04:30:19.050627+00:00"
+  },
+  "patient_test_d2affe61": {
+    "patient_id": "patient_test_d2affe61",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-24T16:24:27.646044+00:00"
+  },
+  "patient_test_fd4b44eb": {
+    "patient_id": "patient_test_fd4b44eb",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-24T16:34:26.527846+00:00"
+  },
+  "patient_test_de03af44": {
+    "patient_id": "patient_test_de03af44",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-24T16:34:53.454461+00:00"
+  },
+  "patient_test_2aba51d2": {
+    "patient_id": "patient_test_2aba51d2",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-24T17:10:13.331524+00:00"
+  },
+  "patient_test_90f16a37": {
+    "patient_id": "patient_test_90f16a37",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-24T17:13:16.016010+00:00"
+  },
+  "patient_test_95cc3325": {
+    "patient_id": "patient_test_95cc3325",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-24T17:17:08.166990+00:00"
+  },
+  "patient_test_e52981ee": {
+    "patient_id": "patient_test_e52981ee",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-26T11:17:24.022331+00:00"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "med_dolo_650": {
+    "id": "med_dolo_650",
+    "generic_name": "Paracetamol",
+    "brand_name": "Dolo 650",
+    "composition": "Paracetamol 650 mg",
+    "strength": "650mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Micro Labs Ltd",
+    "indications": [
+      "Fever (Pyrexia)",
+      "Mild to moderate pain",
+      "Headache",
+      "Body ache",
+      "Post-vaccination pyrexia"
+    ],
+    "contraindications": [
+      "Severe liver disease / hepatic impairment",
+      "Known hypersensitivity to paracetamol"
+    ],
+    "known_interactions": [
+      "Alcohol (increases risk of hepatotoxicity)",
+      "Warfarin (may slightly increase INR with chronic high doses)"
+    ],
+    "warnings": "Do not exceed 4000mg per 24 hours. Overdose causes severe, potentially fatal liver damage. Avoid taking other paracetamol-containing combination drugs simultaneously.",
+    "storage_info": "Store below 30°C in a dry place. Protect from moisture and direct sunlight.",
+    "prescription_required": false,
+    "source": "Indian Pharmacopoeia (IP) / CDSCO Verified Drug Directory",
+    "last_verified": "2026-08-10T00:00:00Z"
+  },
+  "med_glycomet_500": {
+    "id": "med_glycomet_500",
+    "generic_name": "Metformin Hydrochloride",
+    "brand_name": "Glycomet 500",
+    "composition": "Metformin Hydrochloride 500 mg",
+    "strength": "500mg",
+    "dosage_form": "Sustained Release Tablet",
+    "manufacturer": "USV Pvt Ltd",
+    "indications": [
+      "Type 2 Diabetes Mellitus",
+      "Insulin resistance",
+      "Polycystic Ovary Syndrome (PCOS) adjuvant"
+    ],
+    "contraindications": [
+      "Severe renal impairment (eGFR < 30 mL/min)",
+      "Metabolic acidosis / Diabetic ketoacidosis",
+      "Severe cardiac failure",
+      "Severe dehydration"
+    ],
+    "known_interactions": [
+      "Iodinated radiocontrast agents (risk of lactic acidosis - withhold 48h)",
+      "Furosemide",
+      "Cimetidine"
+    ],
+    "warnings": "Take with meals to reduce gastrointestinal upset. Rare risk of lactic acidosis in patients with significant renal impairment.",
+    "storage_info": "Store at controlled room temperature (20°C to 25°C). Keep out of reach of children.",
+    "prescription_required": true,
+    "source": "CDSCO / Central Drugs Standard Control Organisation",
+    "last_verified": "2026-08-01T00:00:00Z"
+  },
+  "med_telma_40": {
+    "id": "med_telma_40",
+    "generic_name": "Telmisartan",
+    "brand_name": "Telma 40",
+    "composition": "Telmisartan 40 mg",
+    "strength": "40mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "Glenmark Pharmaceuticals",
+    "indications": [
+      "Essential Hypertension (High Blood Pressure)",
+      "Cardiovascular risk reduction in high-risk patients"
+    ],
+    "contraindications": [
+      "Pregnancy (2nd and 3rd trimesters - causes fetal toxicity)",
+      "Biliary obstructive disorders",
+      "Severe hepatic impairment"
+    ],
+    "known_interactions": [
+      "Potassium-sparing diuretics & Potassium supplements (risk of hyperkalemia)",
+      "Lithium",
+      "NSAIDs (may reduce antihypertensive effect)"
+    ],
+    "warnings": "Monitor serum potassium and renal function periodically. Do not discontinue abruptly without physician consultation.",
+    "storage_info": "Store in the original moisture-resistant blister pack below 30°C.",
+    "prescription_required": true,
+    "source": "CDSCO / National List of Essential Medicines (NLEM)",
+    "last_verified": "2026-07-25T00:00:00Z"
+  },
+  "med_augmentin_625": {
+    "id": "med_augmentin_625",
+    "generic_name": "Amoxicillin and Potassium Clavulanate",
+    "brand_name": "Augmentin 625 Duo",
+    "composition": "Amoxicillin 500 mg + Clavulanic Acid 125 mg",
+    "strength": "625mg",
+    "dosage_form": "Tablet",
+    "manufacturer": "GlaxoSmithKline Pharmaceuticals",
+    "indications": [
+      "Community-acquired pneumonia",
+      "Acute bacterial sinusitis",
+      "Otitis media",
+      "Urinary tract infections",
+      "Skin & soft tissue infections"
+    ],
+    "contraindications": [
+      "History of amoxicillin/clavulanate-associated jaundice or hepatic dysfunction",
+      "Severe penicillin allergy"
+    ],
+    "known_interactions": [
+      "Methotrexate (reduced clearance)",
+      "Oral anticoagulants",
+      "Probenecid"
+    ],
+    "warnings": "Complete full prescribed course to prevent antimicrobial resistance. Discontinue immediately if allergic rash or anaphylaxis occurs.",
+    "storage_info": "Store in a cool, dry place below 25°C protected from moisture.",
+    "prescription_required": true,
+    "source": "CDSCO / NLEM India",
+    "last_verified": "2026-08-03T00:00:00Z"
+  },
+  "med_pan_40": {
+    "id": "med_pan_40",
+    "generic_name": "Pantoprazole Gastro-resistant",
+    "brand_name": "Pan 40",
+    "composition": "Pantoprazole Sodium 40 mg",
+    "strength": "40mg",
+    "dosage_form": "Gastro-resistant Tablet",
+    "manufacturer": "Alkem Laboratories",
+    "indications": [
+      "Gastroesophageal Reflux Disease (GERD)",
+      "Peptic & Duodenal Ulcers",
+      "Zollinger-Ellison Syndrome",
+      "NSAID-induced ulcer prophylaxis"
+    ],
+    "contraindications": [
+      "Hypersensitivity to substituted benzimidazoles"
+    ],
+    "known_interactions": [
+      "Ketoconazole / Itraconazole (decreased absorption due to increased pH)",
+      "Atazanavir",
+      "Methotrexate"
+    ],
+    "warnings": "Best taken 30 to 60 minutes before breakfast. Swallow whole, do not crush or chew.",
+    "storage_info": "Store protected from moisture and light at temperature not exceeding 30°C.",
+    "prescription_required": true,
+    "source": "CDSCO Verified Database",
+    "last_verified": "2026-08-06T00:00:00Z"
+  },
+  "med_atorva_20": {
+    "id": "med_atorva_20",
+    "generic_name": "Atorvastatin Calcium",
+    "brand_name": "Atorva 20",
+    "composition": "Atorvastatin Calcium 20 mg",
+    "strength": "20mg",
+    "dosage_form": "Film-coated Tablet",
+    "manufacturer": "Zydus Healthcare",
+    "indications": [
+      "Hypercholesterolemia",
+      "Hyperlipidemia",
+      "Prevention of cardiovascular events in coronary artery disease"
+    ],
+    "contraindications": [
+      "Active liver disease / unexplained persistent elevation of serum transaminases",
+      "Pregnancy and lactation"
+    ],
+    "known_interactions": [
+      "Clarithromycin / Erythromycin (increased risk of myopathy)",
+      "Cyclosporine",
+      "Grapefruit juice in large quantities"
+    ],
+    "warnings": "Report unexplained muscle pain, tenderness, or weakness promptly (risk of rhabdomyolysis).",
+    "storage_info": "Store below 25°C in a dry place.",
+    "prescription_required": true,
+    "source": "CDSCO / NLEM India",
+    "last_verified": "2026-08-07T00:00:00Z"
+  }
+}

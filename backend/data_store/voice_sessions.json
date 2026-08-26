@@ -1,0 +1,32 @@
+{
+  "vses_04ecf1a0c7": {
+    "session_id": "vses_04ecf1a0c7",
+    "trace_id": "trace_7b365bf91d22",
+    "user_id": "patient_ravi_kumar",
+    "user_transcript": "Circular English. We don't have a previous node for.",
+    "language": "en",
+    "tool_called": "general_health_assistant",
+    "spoken_response": "Welcome to HealthFlow AI. I can assist you in finding Government Schemes (PM-JAY, Aarogyasri), locating ABDM doctors & hospitals, checking e-RaktKosh blood availability, or analyzing prescriptions.",
+    "timestamp": "2026-08-20T05:11:43.284379+00:00"
+  },
+  "vses_94db498673": {
+    "session_id": "vses_94db498673",
+    "trace_id": "trace_005193b403f3",
+    "user_id": "patient_ravi_kumar",
+    "user_transcript": "Travels to this particular link list. OK, we have to travels to.",
+    "language": "en",
+    "tool_called": "general_health_assistant",
+    "spoken_response": "Welcome to HealthFlow AI. I can assist you in finding Government Schemes (PM-JAY, Aarogyasri), locating ABDM doctors & hospitals, checking e-RaktKosh blood availability, or analyzing prescriptions.",
+    "timestamp": "2026-08-20T05:11:50.688447+00:00"
+  },
+  "vses_50f2438f5f": {
+    "session_id": "vses_50f2438f5f",
+    "trace_id": "trace_d1e81218be50",
+    "user_id": "patient_ravi_kumar",
+    "user_transcript": "Travels to this particular link list. OK, we have to travels to.",
+    "language": "en",
+    "tool_called": "general_health_assistant",
+    "spoken_response": "Welcome to HealthFlow AI. I can assist you in finding Government Schemes (PM-JAY, Aarogyasri), locating ABDM doctors & hospitals, checking e-RaktKosh blood availability, or analyzing prescriptions.",
+    "timestamp": "2026-08-20T05:11:52.597832+00:00"
+  }
+}

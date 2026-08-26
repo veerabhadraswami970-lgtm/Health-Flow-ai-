@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: healthflow_backend_prod
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DEBUG=False
+      - PERSISTENCE_MODE=local
+      - USE_MOCK_INTEGRATIONS=True
+    volumes:
+      - ./backend/data_store:/app/data_store
+      - ./backend/logs:/app/logs
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: healthflow_frontend_prod
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: always

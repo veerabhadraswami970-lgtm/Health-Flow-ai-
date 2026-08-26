@@ -1,0 +1,169 @@
+{
+  "doc_ramesh_varma": {
+    "id": "doc_ramesh_varma",
+    "hpr_id": "dr.ramesh.varma@hpr",
+    "name": "Dr. Ramesh Varma",
+    "qualification": "MBBS, MD (Gen Med), DM (Cardiology)",
+    "specialty": "Cardiology",
+    "sub_specialties": [
+      "Interventional Cardiology",
+      "Heart Failure Management",
+      "Hypertension"
+    ],
+    "experience_years": 18,
+    "languages": [
+      "English",
+      "Telugu",
+      "Hindi"
+    ],
+    "hospital_id": "hosp_nims_hyd",
+    "hospital_name": "Nizam's Institute of Medical Sciences (NIMS)",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "consultation_fee": 300,
+    "is_abdm_verified": true,
+    "available_days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "slots": [
+      "09:00 AM",
+      "10:00 AM",
+      "11:30 AM",
+      "02:00 PM",
+      "03:30 PM"
+    ],
+    "appointment_types": [
+      "Physical OPD",
+      "Teleconsultation"
+    ],
+    "contact": "040-23489000",
+    "rating": 4.9
+  },
+  "doc_ananya_sen": {
+    "id": "doc_ananya_sen",
+    "hpr_id": "dr.ananya.sen@hpr",
+    "name": "Dr. Ananya Sen",
+    "qualification": "MBBS, MD (Endocrinology)",
+    "specialty": "Endocrinology & Diabetology",
+    "sub_specialties": [
+      "Type 1 & 2 Diabetes",
+      "Thyroid Disorders",
+      "Metabolic Syndrome"
+    ],
+    "experience_years": 14,
+    "languages": [
+      "English",
+      "Hindi",
+      "Bengali"
+    ],
+    "hospital_id": "hosp_aiims_delhi",
+    "hospital_name": "AIIMS New Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "consultation_fee": 150,
+    "is_abdm_verified": true,
+    "available_days": [
+      "Monday",
+      "Wednesday",
+      "Friday"
+    ],
+    "slots": [
+      "09:30 AM",
+      "11:00 AM",
+      "02:00 PM",
+      "04:00 PM"
+    ],
+    "appointment_types": [
+      "Physical OPD",
+      "Teleconsultation"
+    ],
+    "contact": "011-26588500",
+    "rating": 4.8
+  },
+  "doc_kavitha_reddy": {
+    "id": "doc_kavitha_reddy",
+    "hpr_id": "dr.kavitha.reddy@hpr",
+    "name": "Dr. Kavitha Reddy",
+    "qualification": "MBBS, DCH, DNB (Pediatrics)",
+    "specialty": "Pediatrics",
+    "sub_specialties": [
+      "Neonatology",
+      "Pediatric Immunization",
+      "Child Nutrition"
+    ],
+    "experience_years": 12,
+    "languages": [
+      "English",
+      "Telugu"
+    ],
+    "hospital_id": "hosp_kgh_vizag",
+    "hospital_name": "King George Hospital (KGH)",
+    "city": "Visakhapatnam",
+    "state": "Andhra Pradesh",
+    "consultation_fee": 100,
+    "is_abdm_verified": true,
+    "available_days": [
+      "Monday",
+      "Tuesday",
+      "Thursday",
+      "Saturday"
+    ],
+    "slots": [
+      "08:30 AM",
+      "10:30 AM",
+      "01:00 PM",
+      "03:00 PM"
+    ],
+    "appointment_types": [
+      "Physical OPD"
+    ],
+    "contact": "0891-2564891",
+    "rating": 4.9
+  },
+  "doc_venkat_murthy": {
+    "id": "doc_venkat_murthy",
+    "hpr_id": "dr.venkat.murthy@hpr",
+    "name": "Dr. Venkatesh Murthy",
+    "qualification": "MBBS, MD (Pulmonary Medicine)",
+    "specialty": "Pulmonology",
+    "sub_specialties": [
+      "Asthma & COPD",
+      "Sleep Apnea",
+      "Tuberculosis & Respiratory Infections"
+    ],
+    "experience_years": 16,
+    "languages": [
+      "English",
+      "Kannada",
+      "Telugu",
+      "Hindi"
+    ],
+    "hospital_id": "hosp_victoria_blr",
+    "hospital_name": "Victoria Hospital / BMCRI",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "consultation_fee": 200,
+    "is_abdm_verified": true,
+    "available_days": [
+      "Tuesday",
+      "Wednesday",
+      "Friday",
+      "Saturday"
+    ],
+    "slots": [
+      "09:00 AM",
+      "11:00 AM",
+      "02:30 PM"
+    ],
+    "appointment_types": [
+      "Physical OPD",
+      "Teleconsultation"
+    ],
+    "contact": "080-26701150",
+    "rating": 4.7
+  }
+}
