@@ -1207,5 +1207,67 @@
     "created_at": "2026-08-26T12:44:03.386114+00:00",
     "is_active": true,
     "is_revoked": false
+  },
+  "hqr_ba1ca4ed5f": {
+    "qr_id": "hqr_ba1ca4ed5f",
+    "patient_id": "patient_ravi_kumar",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9iYTFjYTRlZDVmIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MjEyNCwiaWF0IjoxNzg3NzQ4NTI0LCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.Qruckw9niNJzml8q982cdLNKEwbh5Rd26oT74_69OYk",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9iYTFjYTRlZDVmIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MjEyNCwiaWF0IjoxNzg3NzQ4NTI0LCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.Qruckw9niNJzml8q982cdLNKEwbh5Rd26oT74_69OYk",
+    "expires_at": "2026-08-26T13:48:44.604959+00:00",
+    "created_at": "2026-08-26T12:48:44.604959+00:00",
+    "is_active": true,
+    "is_revoked": false
+  },
+  "hqr_303490333f": {
+    "qr_id": "hqr_303490333f",
+    "patient_id": "patient_ravi_kumar",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl8zMDM0OTAzMzNmIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MDMyNCwiaWF0IjoxNzg3NzQ4NTI0LCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.FnpZ1_VWAu0SFzSBfPeFlcB4MqAEL9d-dDkTx9j4Y-c",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl8zMDM0OTAzMzNmIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MDMyNCwiaWF0IjoxNzg3NzQ4NTI0LCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.FnpZ1_VWAu0SFzSBfPeFlcB4MqAEL9d-dDkTx9j4Y-c",
+    "expires_at": "2026-08-26T13:18:44.683235+00:00",
+    "created_at": "2026-08-26T12:48:44.683235+00:00",
+    "is_active": false,
+    "is_revoked": true,
+    "revoked_at": "2026-08-26T12:48:44.700189+00:00"
+  },
+  "hqr_eb064fd1a1": {
+    "qr_id": "hqr_eb064fd1a1",
+    "patient_id": "HF-PAT-2026-800254",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9lYjA2NGZkMWExIiwicGF0aWVudF9pZCI6IkhGLVBBVC0yMDI2LTgwMDI1NCIsImV4cCI6MTc4NzgzNDkyNCwiaWF0IjoxNzg3NzQ4NTI0LCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.ha75NYhpBDRenRbg15vFFRUkEBhwlrnMDTIAs36oKyQ",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9lYjA2NGZkMWExIiwicGF0aWVudF9pZCI6IkhGLVBBVC0yMDI2LTgwMDI1NCIsImV4cCI6MTc4NzgzNDkyNCwiaWF0IjoxNzg3NzQ4NTI0LCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.ha75NYhpBDRenRbg15vFFRUkEBhwlrnMDTIAs36oKyQ",
+    "expires_at": "2026-08-27T12:48:44.778255+00:00",
+    "created_at": "2026-08-26T12:48:44.778255+00:00",
+    "is_active": true,
+    "is_revoked": false
+  },
+  "hqr_e33b167913": {
+    "qr_id": "hqr_e33b167913",
+    "patient_id": "patient_ravi_kumar",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9lMzNiMTY3OTEzIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MjQ0MywiaWF0IjoxNzg3NzQ4ODQzLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.kUJ5w0dEQISQjJn-6FDRGidphIOyF1scqU9cXe7p0DI",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9lMzNiMTY3OTEzIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MjQ0MywiaWF0IjoxNzg3NzQ4ODQzLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.kUJ5w0dEQISQjJn-6FDRGidphIOyF1scqU9cXe7p0DI",
+    "expires_at": "2026-08-26T13:54:03.310467+00:00",
+    "created_at": "2026-08-26T12:54:03.310467+00:00",
+    "is_active": true,
+    "is_revoked": false
+  },
+  "hqr_1e44c3fc0b": {
+    "qr_id": "hqr_1e44c3fc0b",
+    "patient_id": "patient_ravi_kumar",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl8xZTQ0YzNmYzBiIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MDY0MywiaWF0IjoxNzg3NzQ4ODQzLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.sgsm2UQXaVDtW8RMm4n7PEwqbsK8i1cYEs5w4bGDEdc",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl8xZTQ0YzNmYzBiIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MDY0MywiaWF0IjoxNzg3NzQ4ODQzLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.sgsm2UQXaVDtW8RMm4n7PEwqbsK8i1cYEs5w4bGDEdc",
+    "expires_at": "2026-08-26T13:24:03.384983+00:00",
+    "created_at": "2026-08-26T12:54:03.384983+00:00",
+    "is_active": false,
+    "is_revoked": true,
+    "revoked_at": "2026-08-26T12:54:03.407512+00:00"
+  },
+  "hqr_9a0e084db3": {
+    "qr_id": "hqr_9a0e084db3",
+    "patient_id": "HF-PAT-2026-646157",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl85YTBlMDg0ZGIzIiwicGF0aWVudF9pZCI6IkhGLVBBVC0yMDI2LTY0NjE1NyIsImV4cCI6MTc4NzgzNTI0MywiaWF0IjoxNzg3NzQ4ODQzLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.JLhQZ-OCmRw4128x6S_anB5SHd1P7e2_t-JwBI8E40Y",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl85YTBlMDg0ZGIzIiwicGF0aWVudF9pZCI6IkhGLVBBVC0yMDI2LTY0NjE1NyIsImV4cCI6MTc4NzgzNTI0MywiaWF0IjoxNzg3NzQ4ODQzLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.JLhQZ-OCmRw4128x6S_anB5SHd1P7e2_t-JwBI8E40Y",
+    "expires_at": "2026-08-27T12:54:03.567022+00:00",
+    "created_at": "2026-08-26T12:54:03.567022+00:00",
+    "is_active": true,
+    "is_revoked": false
   }
 }

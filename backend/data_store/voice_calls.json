@@ -6,12 +6,12 @@
     "current_state": "PRESCRIPTION_DISCLOSED",
     "last_spoken_response": "Welcome to HealthFlow AI, Healthcare Without Barriers. Press 1 for Government Schemes, Press 2 for Blood Bank, Press 3 for Doctor discovery, Press 4 for your Prescriptions, or Press 0 for Emergency.",
     "is_pin_authenticated": true,
-    "created_at": "2026-08-26T12:44:03.624673+00:00",
-    "updated_at": "2026-08-26T12:44:03.754948+00:00",
+    "created_at": "2026-08-26T12:54:03.871222+00:00",
+    "updated_at": "2026-08-26T12:54:04.064251+00:00",
     "authenticated_patient_id": "patient_ravi_kumar",
     "status": "completed",
     "duration_seconds": 45,
-    "completed_at": "2026-08-26T12:44:03.786305+00:00"
+    "completed_at": "2026-08-26T12:54:04.132650+00:00"
   },
   "CA_test_0": {
     "call_sid": "CA_test_0",
@@ -20,8 +20,8 @@
     "current_state": "EMERGENCY_ROUTED",
     "last_spoken_response": "EMERGENCY ACTIVATED. Routing to National Emergency Service 112 and Ambulance 108 immediately.",
     "is_pin_authenticated": false,
-    "created_at": "2026-08-26T12:44:03.633954+00:00",
-    "updated_at": "2026-08-26T12:44:03.633954+00:00"
+    "created_at": "2026-08-26T12:54:03.878579+00:00",
+    "updated_at": "2026-08-26T12:54:03.878579+00:00"
   },
   "CA_test_1": {
     "call_sid": "CA_test_1",
@@ -30,8 +30,8 @@
     "current_state": "SCHEME_PROMPT",
     "last_spoken_response": "You have selected Government Health Schemes. AB-PMJAY offers up to 5 Lakh rupees and Dr. YSR Aarogyasri covers up to 25 Lakh rupees for catastrophic illness. What disease or treatment do you need assistance with?",
     "is_pin_authenticated": false,
-    "created_at": "2026-08-26T12:44:03.650112+00:00",
-    "updated_at": "2026-08-26T12:44:03.650112+00:00"
+    "created_at": "2026-08-26T12:54:03.897849+00:00",
+    "updated_at": "2026-08-26T12:54:03.897849+00:00"
   },
   "CA_test_2": {
     "call_sid": "CA_test_2",
@@ -40,8 +40,8 @@
     "current_state": "BLOOD_BANK_PROMPT",
     "last_spoken_response": "You have selected e-RaktKosh Blood Bank finder. Please say or enter your required blood group, for example O positive, A positive, or Platelets.",
     "is_pin_authenticated": false,
-    "created_at": "2026-08-26T12:44:03.672573+00:00",
-    "updated_at": "2026-08-26T12:44:03.672573+00:00"
+    "created_at": "2026-08-26T12:54:03.914047+00:00",
+    "updated_at": "2026-08-26T12:54:03.914047+00:00"
   },
   "CA_test_3": {
     "call_sid": "CA_test_3",
@@ -50,8 +50,8 @@
     "current_state": "DOCTOR_PROMPT",
     "last_spoken_response": "You have selected ABDM Doctor Discovery. Please say the specialty you need, such as Cardiology, Pediatrics, or General Physician.",
     "is_pin_authenticated": false,
-    "created_at": "2026-08-26T12:44:03.688473+00:00",
-    "updated_at": "2026-08-26T12:44:03.688473+00:00"
+    "created_at": "2026-08-26T12:54:03.982660+00:00",
+    "updated_at": "2026-08-26T12:54:03.982660+00:00"
   },
   "CA_test_4": {
     "call_sid": "CA_test_4",
@@ -60,8 +60,8 @@
     "current_state": "AWAITING_PIN",
     "last_spoken_response": "For patient privacy under India Digital Health Guidelines, please enter your 4-digit security PIN to access your prescription.",
     "is_pin_authenticated": false,
-    "created_at": "2026-08-26T12:44:03.705187+00:00",
-    "updated_at": "2026-08-26T12:44:03.705187+00:00"
+    "created_at": "2026-08-26T12:54:04.004793+00:00",
+    "updated_at": "2026-08-26T12:54:04.004793+00:00"
   },
   "CA_sim_mt12d3ew": {
     "call_sid": "CA_sim_mt12d3ew",

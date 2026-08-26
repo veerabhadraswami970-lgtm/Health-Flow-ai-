@@ -292,5 +292,47 @@
       }
     ],
     "updated_at": "2026-08-26T12:44:02.865149+00:00"
+  },
+  "patient_test_05e69e95": {
+    "patient_id": "patient_test_05e69e95",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-26T12:48:44.387013+00:00"
+  },
+  "patient_test_ae94929e": {
+    "patient_id": "patient_test_ae94929e",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-26T12:54:03.002711+00:00"
   }
 }
