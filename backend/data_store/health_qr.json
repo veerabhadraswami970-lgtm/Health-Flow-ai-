@@ -1269,5 +1269,36 @@
     "created_at": "2026-08-26T12:54:03.567022+00:00",
     "is_active": true,
     "is_revoked": false
+  },
+  "hqr_23dcba8d9b": {
+    "qr_id": "hqr_23dcba8d9b",
+    "patient_id": "patient_ravi_kumar",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl8yM2RjYmE4ZDliIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1Mjc0MCwiaWF0IjoxNzg3NzQ5MTQwLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.h6biI3wKEUH8aiUkUqUgKAbmSB1mqXsnp3v-r4IN0KA",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl8yM2RjYmE4ZDliIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1Mjc0MCwiaWF0IjoxNzg3NzQ5MTQwLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.h6biI3wKEUH8aiUkUqUgKAbmSB1mqXsnp3v-r4IN0KA",
+    "expires_at": "2026-08-26T13:59:00.751408+00:00",
+    "created_at": "2026-08-26T12:59:00.751408+00:00",
+    "is_active": true,
+    "is_revoked": false
+  },
+  "hqr_795f391f8d": {
+    "qr_id": "hqr_795f391f8d",
+    "patient_id": "patient_ravi_kumar",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl83OTVmMzkxZjhkIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MDk0MCwiaWF0IjoxNzg3NzQ5MTQwLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.yVWzhKQoghPY4RapnGiuhdfmEylGF79cac_7HyM48Fw",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl83OTVmMzkxZjhkIiwicGF0aWVudF9pZCI6InBhdGllbnRfcmF2aV9rdW1hciIsImV4cCI6MTc4Nzc1MDk0MCwiaWF0IjoxNzg3NzQ5MTQwLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.yVWzhKQoghPY4RapnGiuhdfmEylGF79cac_7HyM48Fw",
+    "expires_at": "2026-08-26T13:29:00.839496+00:00",
+    "created_at": "2026-08-26T12:59:00.839496+00:00",
+    "is_active": false,
+    "is_revoked": true,
+    "revoked_at": "2026-08-26T12:59:00.863581+00:00"
+  },
+  "hqr_e61304281c": {
+    "qr_id": "hqr_e61304281c",
+    "patient_id": "HF-PAT-2026-649271",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9lNjEzMDQyODFjIiwicGF0aWVudF9pZCI6IkhGLVBBVC0yMDI2LTY0OTI3MSIsImV4cCI6MTc4NzgzNTU0MSwiaWF0IjoxNzg3NzQ5MTQxLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.cSursnQNeLOkZlZTm8UUWoQZ_BCTN8b-IFiXsnU5nI8",
+    "qr_payload": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJxcl9pZCI6Imhxcl9lNjEzMDQyODFjIiwicGF0aWVudF9pZCI6IkhGLVBBVC0yMDI2LTY0OTI3MSIsImV4cCI6MTc4NzgzNTU0MSwiaWF0IjoxNzg3NzQ5MTQxLCJ0eXBlIjoiaGVhbHRoX3FyIiwiaXNzIjoiaGVhbHRoZmxvdy1haSJ9.cSursnQNeLOkZlZTm8UUWoQZ_BCTN8b-IFiXsnU5nI8",
+    "expires_at": "2026-08-27T12:59:01.019564+00:00",
+    "created_at": "2026-08-26T12:59:01.019564+00:00",
+    "is_active": true,
+    "is_revoked": false
   }
 }

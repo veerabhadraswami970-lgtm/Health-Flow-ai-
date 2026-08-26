@@ -166,7 +166,7 @@ export default function App() {
         {activeTab === 'pharmacist_portal' && <PharmacistDashboard t={t} />}
         {activeTab === 'hospital_admin' && <HospitalAdminDashboard t={t} />}
         {activeTab === 'schemes' && <SchemeFinder t={t} />}
-        {activeTab === 'register' && <RegistrationWizard t={t} />}
+        {activeTab === 'register' && <RegistrationWizard t={t} onRegistrationComplete={() => setActiveTab('hospitals')} />}
         {activeTab === 'disease_finder' && <DiseaseSchemeFinder t={t} />}
         {activeTab === 'prescription' && <PrescriptionAnalyzer t={t} role={role} />}
         {activeTab === 'qr' && <QRScannerViewer t={t} />}
