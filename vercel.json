@@ -1,12 +1,8 @@
 {
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/dist",
+  "buildCommand": "npm run build --prefix frontend || npm run build",
+  "outputDirectory": "dist",
   "framework": "vite",
   "rewrites": [
-    {
-      "source": "/api/v1/(.*)",
-      "destination": "https://healthflow-ai-backend.onrender.com/api/v1/$1"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
