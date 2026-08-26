@@ -67,8 +67,18 @@ class MockHFRProvider(BaseHFRProvider):
             data = d.to_dict()
             h_obj = HospitalResponse(**data)
 
-            if q and not (q in h_obj.name.lower() or q in h_obj.city.lower() or any(q in s.lower() for s in h_obj.specialties)):
-                continue
+            # Enhanced multi-field search matching across name, city, state, address, facility_type, specialties & schemes
+            if q:
+                match_name = q in h_obj.name.lower()
+                match_city = q in h_obj.city.lower()
+                match_state = q in h_obj.state.lower()
+                match_address = q in h_obj.address.lower()
+                match_type = q in h_obj.facility_type.lower()
+                match_spec = any(q in s.lower() for s in h_obj.specialties)
+                match_scheme = any(q in sch.lower() for sch in h_obj.schemes_empaneled)
+                if not (match_name or match_city or match_state or match_address or match_type or match_spec or match_scheme):
+                    continue
+
             if c and c != h_obj.city.lower():
                 continue
             if st and st != h_obj.state.lower():
@@ -87,13 +97,18 @@ class MockHFRProvider(BaseHFRProvider):
             if latitude is not None and longitude is not None:
                 dist = haversine_distance(latitude, longitude, h_obj.latitude, h_obj.longitude)
                 h_obj.distance_km = dist
-                if radius_km is not None and radius_km > 0 and dist > radius_km:
-                    continue
 
             results.append(h_obj)
 
+        # Sort results by distance if location provided
         if latitude is not None and longitude is not None:
             results.sort(key=lambda x: x.distance_km)
+
+        # Apply radius filter if provided and not explicitly searching broad query/city
+        if radius_km is not None and radius_km > 0 and not q and not c:
+            filtered = [r for r in results if r.distance_km <= radius_km]
+            if filtered:
+                return filtered
 
         return results
 

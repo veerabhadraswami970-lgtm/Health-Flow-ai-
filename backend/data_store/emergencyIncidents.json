@@ -4318,5 +4318,185 @@
     },
     "createdAt": "2026-08-26T13:29:16.746094+00:00",
     "resolvedAt": null
+  },
+  "inc_acc_dc9ee2b9": {
+    "incidentId": "inc_acc_dc9ee2b9",
+    "patientId": "patient_ravi_kumar",
+    "eventId": null,
+    "detectionTime": "2026-08-26T13:35:39.743721+00:00",
+    "latitude": 17.385,
+    "longitude": 78.4867,
+    "confidenceScore": 88.5,
+    "detectionSignals": {
+      "impact": 35,
+      "rotation": 20,
+      "stop": 20,
+      "inactivity": 13.5
+    },
+    "userResponse": "USER_CONFIRMED_SAFE",
+    "status": "FALSE_ALARM",
+    "patientSummary": {
+      "patient_id": "patient_ravi_kumar",
+      "name": "Ravi Kumar",
+      "age": 42,
+      "blood_group": "B+",
+      "known_allergies": [
+        "Penicillin"
+      ],
+      "known_conditions": [
+        "Hypertension"
+      ],
+      "primary_language": "en",
+      "emergency_contacts": [
+        {
+          "name": "Anil Kumar",
+          "relation": "Son",
+          "phone": "+919876543211"
+        },
+        {
+          "name": "Sunita Devi",
+          "relation": "Spouse",
+          "phone": "+919876543212"
+        }
+      ]
+    },
+    "notifiedContacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211",
+        "notification_status": "Notification sent",
+        "sent_at": "2026-08-26T13:35:39.743721+00:00",
+        "channel": "SMS & Emergency Push"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212",
+        "notification_status": "Notification sent",
+        "sent_at": "2026-08-26T13:35:39.743721+00:00",
+        "channel": "SMS & Emergency Push"
+      }
+    ],
+    "notifiedHospitals": [
+      {
+        "hospital_id": "hosp_nims_hyd",
+        "name": "Nizam's Institute of Medical Sciences (NIMS)",
+        "address": "Punjagutta, Hyderabad, Telangana - 500082",
+        "phone": "040-23489244",
+        "distance_km": 2.5,
+        "latitude": 17.4239,
+        "longitude": 78.4526,
+        "emergency_beds_available": true
+      }
+    ],
+    "hospitalIntegrationNote": {
+      "status": "Hospital notification integration is not configured.",
+      "available_trauma_facilities": 1,
+      "facilities": [
+        {
+          "hospital_id": "hosp_nims_hyd",
+          "name": "Nizam's Institute of Medical Sciences (NIMS)",
+          "address": "Punjagutta, Hyderabad, Telangana - 500082",
+          "phone": "040-23489244",
+          "distance_km": 2.5,
+          "latitude": 17.4239,
+          "longitude": 78.4526,
+          "emergency_beds_available": true
+        }
+      ]
+    },
+    "createdAt": "2026-08-26T13:35:39.743721+00:00",
+    "resolvedAt": "2026-08-26T13:35:39.841741+00:00"
+  },
+  "inc_acc_fb4b7b21": {
+    "incidentId": "inc_acc_fb4b7b21",
+    "patientId": "patient_ravi_kumar",
+    "eventId": null,
+    "detectionTime": "2026-08-26T13:35:39.875954+00:00",
+    "latitude": 17.385,
+    "longitude": 78.4867,
+    "confidenceScore": 92.0,
+    "detectionSignals": {
+      "impact": 35,
+      "rotation": 20,
+      "stop": 20,
+      "inactivity": 15
+    },
+    "userResponse": "TIMEOUT_NO_RESPONSE",
+    "status": "CONTACT_NOTIFIED",
+    "patientSummary": {
+      "patient_id": "patient_ravi_kumar",
+      "name": "Ravi Kumar",
+      "age": 42,
+      "blood_group": "B+",
+      "known_allergies": [
+        "Penicillin"
+      ],
+      "known_conditions": [
+        "Hypertension"
+      ],
+      "primary_language": "en",
+      "emergency_contacts": [
+        {
+          "name": "Anil Kumar",
+          "relation": "Son",
+          "phone": "+919876543211"
+        },
+        {
+          "name": "Sunita Devi",
+          "relation": "Spouse",
+          "phone": "+919876543212"
+        }
+      ]
+    },
+    "notifiedContacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211",
+        "notification_status": "Notification sent",
+        "sent_at": "2026-08-26T13:35:39.875954+00:00",
+        "channel": "SMS & Emergency Push"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212",
+        "notification_status": "Notification sent",
+        "sent_at": "2026-08-26T13:35:39.875954+00:00",
+        "channel": "SMS & Emergency Push"
+      }
+    ],
+    "notifiedHospitals": [
+      {
+        "hospital_id": "hosp_nims_hyd",
+        "name": "Nizam's Institute of Medical Sciences (NIMS)",
+        "address": "Punjagutta, Hyderabad, Telangana - 500082",
+        "phone": "040-23489244",
+        "distance_km": 2.5,
+        "latitude": 17.4239,
+        "longitude": 78.4526,
+        "emergency_beds_available": true
+      }
+    ],
+    "hospitalIntegrationNote": {
+      "status": "Hospital notification integration is not configured.",
+      "available_trauma_facilities": 1,
+      "facilities": [
+        {
+          "hospital_id": "hosp_nims_hyd",
+          "name": "Nizam's Institute of Medical Sciences (NIMS)",
+          "address": "Punjagutta, Hyderabad, Telangana - 500082",
+          "phone": "040-23489244",
+          "distance_km": 2.5,
+          "latitude": 17.4239,
+          "longitude": 78.4526,
+          "emergency_beds_available": true
+        }
+      ]
+    },
+    "createdAt": "2026-08-26T13:35:39.875954+00:00",
+    "resolvedAt": null
   }
 }

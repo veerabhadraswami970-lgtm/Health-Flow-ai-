@@ -59,7 +59,7 @@ export default function HospitalDiscovery({ t, onEmergencyClick, onBookAppointme
   const [city, setCity] = useState('');
   const [emergencyOnly, setEmergencyOnly] = useState(false);
   const [hasDialysis, setHasDialysis] = useState(false);
-  const [radiusKm, setRadiusKm] = useState(50);
+  const [radiusKm, setRadiusKm] = useState(500);
   const [userLocation, setUserLocation] = useState(DEFAULT_LOCATION);
   const [locating, setLocating] = useState(false);
   const [loading, setLoading] = useState(false);
