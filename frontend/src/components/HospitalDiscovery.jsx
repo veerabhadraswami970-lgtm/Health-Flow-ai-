@@ -44,13 +44,21 @@ function RecenterMap({ center }) {
   return null;
 }
 
+const CITY_COORDINATES = {
+  "Chennai": { latitude: 13.0827, longitude: 80.2707, address: "Chennai Center, Tamil Nadu", isFallback: false },
+  "Hyderabad": { latitude: 17.3850, longitude: 78.4867, address: "Hyderabad Center, Telangana", isFallback: false },
+  "New Delhi": { latitude: 28.6139, longitude: 77.2090, address: "New Delhi Center, Delhi", isFallback: false },
+  "Visakhapatnam": { latitude: 17.6868, longitude: 83.2185, address: "Visakhapatnam Center, Andhra Pradesh", isFallback: false },
+  "Bengaluru": { latitude: 12.9716, longitude: 77.5946, address: "Bengaluru Center, Karnataka", isFallback: false }
+};
+
 export default function HospitalDiscovery({ t, onEmergencyClick, onBookAppointment }) {
   const [hospitals, setHospitals] = useState([]);
   const [query, setQuery] = useState('');
   const [city, setCity] = useState('');
   const [emergencyOnly, setEmergencyOnly] = useState(false);
   const [hasDialysis, setHasDialysis] = useState(false);
-  const [radiusKm, setRadiusKm] = useState(25);
+  const [radiusKm, setRadiusKm] = useState(50);
   const [userLocation, setUserLocation] = useState(DEFAULT_LOCATION);
   const [locating, setLocating] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -59,6 +67,13 @@ export default function HospitalDiscovery({ t, onEmergencyClick, onBookAppointme
   useEffect(() => {
     handleDetectLocation();
   }, []);
+
+  const handleCityChange = (selectedCity) => {
+    setCity(selectedCity);
+    if (selectedCity && CITY_COORDINATES[selectedCity]) {
+      setUserLocation(CITY_COORDINATES[selectedCity]);
+    }
+  };
 
   useEffect(() => {
     loadHospitals();
@@ -284,7 +299,7 @@ export default function HospitalDiscovery({ t, onEmergencyClick, onBookAppointme
 
         <div>
           <label style={{ fontSize: '0.8rem', color: 'var(--hf-text-muted)', fontWeight: '700' }}>City / Region</label>
-          <select className="select-field" value={city} onChange={(e) => setCity(e.target.value)} style={{ marginTop: '6px', padding: '9px', fontSize: '0.88rem' }}>
+          <select className="select-field" value={city} onChange={(e) => handleCityChange(e.target.value)} style={{ marginTop: '6px', padding: '9px', fontSize: '0.88rem' }}>
             <option value="" style={{ background: '#0b1325' }}>All Cities</option>
             <option value="Chennai" style={{ background: '#0b1325' }}>Chennai</option>
             <option value="Hyderabad" style={{ background: '#0b1325' }}>Hyderabad</option>
