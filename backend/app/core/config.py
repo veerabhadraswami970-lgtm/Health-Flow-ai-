@@ -25,7 +25,11 @@ class Settings(BaseSettings):
     QR_TOKEN_EXPIRE_MINUTES: int = 15  # Short-lived secure prescription token
     
     # CORS
-    BACKEND_CORS_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173", "*"]
+    BACKEND_CORS_ORIGINS: List[str] = [
+        "http://localhost:5173", 
+        "http://localhost:3000", 
+        "http://127.0.0.1:5173"
+    ]
     
     # Storage & Persistence
     PERSISTENCE_MODE: str = Field(default="local", description="local | firestore")

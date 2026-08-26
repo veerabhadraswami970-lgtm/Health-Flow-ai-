@@ -7,6 +7,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
 import time
+import os
+import json
 from app.core.config import settings
 from app.core.logger import logger
 from app.db.firestore_client import get_db
@@ -30,12 +32,24 @@ app = FastAPI(
 )
 
 # CORS configuration
+raw_origins = os.getenv("BACKEND_CORS_ORIGINS")
+if raw_origins:
+    try:
+        origins = json.loads(raw_origins)
+    except Exception:
+        origins = [o.strip() for o in raw_origins.split(",") if o.strip()]
+else:
+    origins = [str(o) for o in settings.BACKEND_CORS_ORIGINS]
+
+has_wildcard = "*" in origins
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.BACKEND_CORS_ORIGINS,
-    allow_credentials=True,
+    allow_origins=["*"] if has_wildcard else origins,
+    allow_credentials=not has_wildcard,  # Crucial fix: browsers reject wildcard origins with allow_credentials=True
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_origin_regex=r"https://.*\.vercel\.app" if not has_wildcard else None,
 )
 
 # Request Timing & Trace Logging Middleware

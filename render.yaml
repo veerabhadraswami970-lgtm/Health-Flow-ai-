@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: healthflow-ai-backend
+    env: python
+    region: singapore
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app.main:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PERSISTENCE_MODE
+        value: firestore
+      - key: FAIL_ON_FIRESTORE_ERROR
+        value: "true"
+      - key: BACKEND_CORS_ORIGINS
+        value: "https://health-flow-ai.vercel.app,http://localhost:5173"
+      - key: FIREBASE_CREDENTIALS_JSON
+        sync: false
