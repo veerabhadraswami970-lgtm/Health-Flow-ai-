@@ -688,5 +688,35 @@
       }
     ],
     "scanned_at": "2026-08-26T12:17:22.037070+00:00"
+  },
+  "ca706786-ecd6-4810-b2bb-04a8c1dd02d2": {
+    "scan_id": "ca706786-ecd6-4810-b2bb-04a8c1dd02d2",
+    "patient_id": null,
+    "items": [
+      {
+        "name": "Dolo 650 (Paracetamol)",
+        "confidence": 0.94
+      },
+      {
+        "name": "Analgesic / Antipyretic",
+        "confidence": 0.88
+      }
+    ],
+    "scanned_at": "2026-08-26T12:44:03.295216+00:00"
+  },
+  "c8ee101e-aec6-4448-8a8e-f23aa818a131": {
+    "scan_id": "c8ee101e-aec6-4448-8a8e-f23aa818a131",
+    "patient_id": null,
+    "items": [
+      {
+        "name": "Telma 40 (Telmisartan)",
+        "confidence": 0.95
+      },
+      {
+        "name": "Antihypertensive ARB",
+        "confidence": 0.91
+      }
+    ],
+    "scanned_at": "2026-08-26T12:44:03.315606+00:00"
   }
 }
