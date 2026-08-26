@@ -3,17 +3,18 @@ import { healthflowApi } from '../services/api';
 import MedicalCross3D from './3d/MedicalCross3D';
 import { Calendar, Clock, CheckCircle, XCircle, RefreshCw, User, Phone, Building2, ShieldCheck, Sparkles, QrCode } from 'lucide-react';
 
-export default function AppointmentBooking({ t, selectedDoctor }) {
+export default function AppointmentBooking({ t, selectedDoctor, selectedHospital }) {
   const [appointments, setAppointments] = useState([]);
   const [doctors, setDoctors] = useState([]);
   const [doctorId, setDoctorId] = useState(selectedDoctor ? selectedDoctor.id : 'doc_ramesh_varma');
-  const [hospitalId, setHospitalId] = useState(selectedDoctor ? selectedDoctor.hospital_id : 'hosp_nims_hyd');
+  const [hospitalId, setHospitalId] = useState(selectedDoctor ? selectedDoctor.hospital_id : (selectedHospital ? (selectedHospital.hfr_id || selectedHospital.id) : 'hosp_nims_hyd'));
+  const [selectedHospObj, setSelectedHospObj] = useState(selectedHospital || null);
   const [patientName, setPatientName] = useState('Ravi Kumar');
   const [patientPhone, setPatientPhone] = useState('+919876543210');
   const [date, setDate] = useState('2026-08-25');
   const [timeSlot, setTimeSlot] = useState('10:00 AM');
   const [appointmentType, setAppointmentType] = useState('Physical OPD');
-  const [reason, setReason] = useState('Routine Cardiology Follow-up');
+  const [reason, setReason] = useState('Routine Consultation & Checkup');
   const [paymentMode, setPaymentMode] = useState('UPI / Razorpay Gateway');
   const [booking, setBooking] = useState(false);
   const [confirmedAppt, setConfirmedAppt] = useState(null);
@@ -36,6 +37,24 @@ export default function AppointmentBooking({ t, selectedDoctor }) {
       }
     }
   }, [selectedDoctor]);
+
+  useEffect(() => {
+    if (selectedHospital) {
+      setSelectedHospObj(selectedHospital);
+      setHospitalId(selectedHospital.hfr_id || selectedHospital.id || 'hosp_nims_hyd');
+      // Preselect first doctor empaneled at this hospital if available
+      if (doctors.length > 0) {
+        const matchedDoc = doctors.find(d => 
+          (d.hospital_name && d.hospital_name.toLowerCase().includes(selectedHospital.name.toLowerCase())) ||
+          d.hospital_id === selectedHospital.id
+        );
+        if (matchedDoc) {
+          setDoctorId(matchedDoc.id);
+          setSelectedDocObj(matchedDoc);
+        }
+      }
+    }
+  }, [selectedHospital, doctors]);
 
   async function loadAppointments() {
     try {
@@ -196,6 +215,13 @@ export default function AppointmentBooking({ t, selectedDoctor }) {
           </div>
 
           <form onSubmit={handleBookAppointment} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {selectedHospObj && (
+              <div style={{ background: 'rgba(0, 242, 254, 0.1)', border: '1px solid rgba(0, 242, 254, 0.3)', padding: '12px 16px', borderRadius: '12px', color: '#00f2fe', fontWeight: 700, fontSize: '0.88rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <Building2 size={18} />
+                <span>Selected Hospital: {selectedHospObj.name} ({selectedHospObj.city || 'Hyderabad'})</span>
+              </div>
+            )}
+
             <div>
               <label style={{ fontSize: '0.82rem', color: 'var(--hf-text-muted)', fontWeight: 700, display: 'block', marginBottom: '6px' }}>Select Certified Doctor</label>
               <select

@@ -750,5 +750,21 @@
     "granted_at": "2026-08-26T12:59:00.689920+00:00",
     "expires_at": "2026-08-27T12:59:00.667569+00:00",
     "created_at": "2026-08-26T12:59:00.667569+00:00"
+  },
+  "consent_ee18d58c0b": {
+    "id": "consent_ee18d58c0b",
+    "patient_id": "patient_ravi_kumar",
+    "requester_id": "doc_ramesh_varma",
+    "requester_name": "Dr. Ramesh Varma",
+    "requester_role": "Doctor",
+    "purpose": "Cardiology OPD Review",
+    "allowed_record_types": [
+      "DiagnosticSummary",
+      "LabReport"
+    ],
+    "status": "GRANTED",
+    "granted_at": "2026-08-26T13:10:19.864015+00:00",
+    "expires_at": "2026-08-27T13:10:19.843846+00:00",
+    "created_at": "2026-08-26T13:10:19.843846+00:00"
   }
 }

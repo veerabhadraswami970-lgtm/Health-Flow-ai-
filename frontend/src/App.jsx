@@ -37,6 +37,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('landing');
   const [emergencyOpen, setEmergencyOpen] = useState(false);
   const [preselectedDoctor, setPreselectedDoctor] = useState(null);
+  const [preselectedHospital, setPreselectedHospital] = useState(null);
   const [showWelcomeScreen, setShowWelcomeScreen] = useState(false);
   const [registerRoleModal, setRegisterRoleModal] = useState(null);
 
@@ -72,6 +73,11 @@ export default function App() {
 
   function handleBookDoctorTrigger(doctorObj) {
     setPreselectedDoctor(doctorObj);
+    setActiveTab('appointments');
+  }
+
+  function handleBookHospitalTrigger(hospitalObj) {
+    setPreselectedHospital(hospitalObj);
     setActiveTab('appointments');
   }
 
@@ -174,8 +180,8 @@ export default function App() {
         {activeTab === 'medicines' && <MedicineDirectory t={t} />}
         {activeTab === 'doctors' && <DoctorDiscovery t={t} onBookDoctor={handleBookDoctorTrigger} />}
         {activeTab === 'medicine_scanner' && <MedicineScanner t={t} />}
-        {activeTab === 'hospitals' && <HospitalDiscovery t={t} onEmergencyClick={() => setEmergencyOpen(true)} />}
-        {activeTab === 'appointments' && <AppointmentBooking t={t} selectedDoctor={preselectedDoctor} />}
+        {activeTab === 'hospitals' && <HospitalDiscovery t={t} onEmergencyClick={() => setEmergencyOpen(true)} onBookAppointment={handleBookHospitalTrigger} />}
+        {activeTab === 'appointments' && <AppointmentBooking t={t} selectedDoctor={preselectedDoctor} selectedHospital={preselectedHospital} />}
         {activeTab === 'blood_bank' && <BloodBankFinder t={t} />}
         {activeTab === 'records' && <HealthRecords t={t} />}
         {activeTab === 'reminders' && <MedicineReminders t={t} />}

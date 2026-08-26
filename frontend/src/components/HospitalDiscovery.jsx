@@ -44,7 +44,7 @@ function RecenterMap({ center }) {
   return null;
 }
 
-export default function HospitalDiscovery({ t, onEmergencyClick }) {
+export default function HospitalDiscovery({ t, onEmergencyClick, onBookAppointment }) {
   const [hospitals, setHospitals] = useState([]);
   const [query, setQuery] = useState('');
   const [city, setCity] = useState('');
@@ -431,17 +431,32 @@ export default function HospitalDiscovery({ t, onEmergencyClick }) {
                   )}
                 </div>
 
-                <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${hosp.latitude},${hosp.longitude}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-secondary"
-                  style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 16px', fontSize: '0.82rem' }}
-                >
-                  <Navigation size={14} color="var(--hf-cyan)" />
-                  <span>Get Directions</span>
-                  <ExternalLink size={12} />
-                </a>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                  <button
+                    onClick={() => {
+                      if (onBookAppointment) {
+                        onBookAppointment(hosp);
+                      }
+                    }}
+                    className="btn btn-primary"
+                    style={{ padding: '8px 16px', fontSize: '0.85rem', borderRadius: '9999px' }}
+                  >
+                    <Calendar size={14} />
+                    <span>Book Appointment</span>
+                  </button>
+
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${hosp.latitude},${hosp.longitude}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-secondary"
+                    style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 16px', fontSize: '0.82rem', borderRadius: '9999px' }}
+                  >
+                    <Navigation size={14} color="var(--hf-cyan)" />
+                    <span>Directions</span>
+                    <ExternalLink size={12} />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
