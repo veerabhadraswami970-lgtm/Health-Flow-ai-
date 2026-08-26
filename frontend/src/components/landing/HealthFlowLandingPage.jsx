@@ -7,6 +7,13 @@ import {
   ArrowRight, Award, Stethoscope, Pill, Building2, User, CheckCircle2,
   Calendar, FileText, Lock, Users, AlertTriangle, X, Menu, ExternalLink, ArrowUp
 } from 'lucide-react';
+import HealthFlowAIOrb from '../3d/HealthFlowAIOrb';
+import Prescription3D from '../3d/Prescription3D';
+import Hospital3D from '../3d/Hospital3D';
+import BloodDrop3D from '../3d/BloodDrop3D';
+import HealthcareShield3D from '../3d/HealthcareShield3D';
+import Medicine3D from '../3d/Medicine3D';
+import EmergencyPulse from '../3d/EmergencyPulse';
 
 /**
  * Scroll Reveal Wrapper Component
@@ -419,6 +426,119 @@ export default function HealthFlowLandingPage({
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* 2.5 INTERACTIVE 3D DASHBOARD FEATURES GRID */}
+      <section className="hf-section" style={{ paddingTop: '10px', paddingBottom: '30px' }}>
+        <div className="hf-landing-container">
+          <div className="hf-section-header">
+            <span className="hf-badge hf-badge-teal">
+              <Sparkles size={14} />
+              <span>SPATIAL HEALTHCARE DASHBOARD</span>
+            </span>
+            <h2>Unified Healthcare Command Dashboard</h2>
+            <p>Access flagship AI prescription OCR, nearby trauma centers, blood bank inventory, and government schemes in one click.</p>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+            {[
+              {
+                id: 'prescription',
+                title: 'AI Prescription Scanner',
+                desc: 'Multilingual OCR, CDSCO drug verification & AI dosage insights',
+                badge: 'Flagship AI',
+                badgeClass: 'hf-badge-teal',
+                component3D: <Prescription3D size={110} />,
+                accentColor: 'var(--hf-teal)'
+              },
+              {
+                id: 'hospitals',
+                title: 'Hospitals & Trauma Centers',
+                desc: 'Live 3D spatial map, ICU bed availability & emergency routing',
+                badge: 'Live HFR Map',
+                badgeClass: 'hf-badge-teal',
+                component3D: <Hospital3D size={110} />,
+                accentColor: 'var(--hf-sage)'
+              },
+              {
+                id: 'blood_bank',
+                title: 'Blood Bank Network',
+                desc: 'Real-time e-RaktKosh inventory & donor matching',
+                badge: 'e-RaktKosh',
+                badgeClass: 'hf-badge-coral',
+                component3D: <BloodDrop3D size={110} />,
+                accentColor: 'var(--hf-coral)'
+              },
+              {
+                id: 'schemes',
+                title: 'Government Health Schemes',
+                desc: 'Ayushman Bharat (PM-JAY), Aarogyasri & instant eligibility',
+                badge: 'AB-PMJAY',
+                badgeClass: 'hf-badge-teal',
+                component3D: <HealthcareShield3D size={110} />,
+                accentColor: '#3b82f6'
+              },
+              {
+                id: 'medicines',
+                title: 'Medicine Intelligence',
+                desc: 'Generic alternatives, drug interactions & side-effect safety',
+                badge: 'CDSCO Shield',
+                badgeClass: 'hf-badge-teal',
+                component3D: <Medicine3D size={110} />,
+                accentColor: 'var(--hf-gold)'
+              },
+              {
+                id: 'emergency_action',
+                title: 'Emergency SOS Response',
+                desc: '1-Tap ambulance dispatch, trauma alerts & ICE contact ping',
+                badge: 'Urgent 24/7',
+                badgeClass: 'hf-badge-coral',
+                component3D: <EmergencyPulse size={100} />,
+                accentColor: 'var(--hf-coral)',
+                isEmergency: true
+              }
+            ].map((card) => (
+              <div
+                key={card.id}
+                className="glass-card"
+                style={{
+                  padding: '28px',
+                  borderRadius: '24px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '16px',
+                  cursor: 'pointer',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}
+                onClick={() => {
+                  if (card.isEmergency) {
+                    if (onOpenEmergencyModal) onOpenEmergencyModal();
+                  } else {
+                    if (onNavigateTab) onNavigateTab(card.id);
+                  }
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                  <span className={`hf-badge ${card.badgeClass}`}>{card.badge}</span>
+                  <ArrowRight size={18} color={card.accentColor} />
+                </div>
+                <div style={{ height: '110px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  {card.component3D}
+                </div>
+                <div>
+                  <h3 className="font-editorial-serif" style={{ fontSize: '1.3rem', color: 'var(--hf-ink)', marginBottom: '6px' }}>
+                    {card.title}
+                  </h3>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--hf-ink-muted)', lineHeight: 1.5, margin: 0 }}>
+                    {card.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

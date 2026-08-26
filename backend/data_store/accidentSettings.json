@@ -523,5 +523,26 @@
       }
     ],
     "updated_at": "2026-08-26T13:42:14.975764+00:00"
+  },
+  "patient_test_e82550a2": {
+    "patient_id": "patient_test_e82550a2",
+    "enabled": true,
+    "auto_escalation": true,
+    "confirmation_timeout_sec": 25,
+    "location_permission_granted": true,
+    "sensor_monitoring_active": true,
+    "emergency_contacts": [
+      {
+        "name": "Anil Kumar",
+        "relation": "Son",
+        "phone": "+919876543211"
+      },
+      {
+        "name": "Sunita Devi",
+        "relation": "Spouse",
+        "phone": "+919876543212"
+      }
+    ],
+    "updated_at": "2026-08-26T13:45:17.208384+00:00"
   }
 }

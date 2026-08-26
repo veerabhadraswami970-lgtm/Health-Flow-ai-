@@ -46,7 +46,6 @@ export default function App() {
   // Role-Based Navigation Config
   const ALL_NAV_ITEMS = [
     { id: 'landing', label: '✨ Overview & Impact', icon: <Globe size={18} />, roles: ['Patient', 'Doctor', 'HospitalAdmin', 'Pharmacist', 'DataAdmin'] },
-    { id: 'home', label: 'Dashboard', icon: <LayoutDashboard size={18} />, roles: ['Patient', 'Doctor', 'HospitalAdmin', 'Pharmacist', 'DataAdmin'] },
     { id: 'register', label: t.nav_register || "Patient Registration", icon: <UserPlus size={18} />, roles: ['Patient', 'DataAdmin'] },
     { id: 'doctor_portal', label: 'Doctor Portal', icon: <Stethoscope size={18} />, roles: ['Doctor', 'DataAdmin'] },
     { id: 'pharmacist_portal', label: 'Pharmacist Portal', icon: <Pill size={18} />, roles: ['Pharmacist', 'DataAdmin'] },
