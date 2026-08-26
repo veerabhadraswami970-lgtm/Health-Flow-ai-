@@ -918,5 +918,27 @@
     "cancellation_reason": "Work conflict",
     "qr_checkin_token": "CHECKIN_UHI-IN-356CAF1B_a41578",
     "provider_source": "ABDM Unified Health Interface (UHI Sandbox)"
+  },
+  "appt_7bbc8e045b": {
+    "id": "appt_7bbc8e045b",
+    "uhi_booking_reference": "UHI-IN-F4999352",
+    "doctor_id": "doc_ramesh_varma",
+    "doctor_name": "Dr. Ramesh Varma",
+    "specialty": "Cardiology",
+    "hospital_id": "hosp_nims_hyd",
+    "hospital_name": "Nizam's Institute of Medical Sciences (NIMS)",
+    "patient_id": "patient_ravi_kumar",
+    "patient_name": "Ravi Kumar",
+    "patient_phone": "+919876543210",
+    "appointment_date": "2026-08-26",
+    "appointment_time": "11:30 AM",
+    "appointment_type": "Physical OPD",
+    "reason_for_visit": "Hypertension review",
+    "status": "CANCELLED",
+    "created_at": "2026-08-26T12:17:21.827683+00:00",
+    "cancelled_at": "2026-08-26T12:17:21.859528+00:00",
+    "cancellation_reason": "Work conflict",
+    "qr_checkin_token": "CHECKIN_UHI-IN-F4999352_8e045b",
+    "provider_source": "ABDM Unified Health Interface (UHI Sandbox)"
   }
 }
