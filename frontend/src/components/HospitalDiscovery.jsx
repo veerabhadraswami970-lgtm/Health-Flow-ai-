@@ -286,6 +286,7 @@ export default function HospitalDiscovery({ t, onEmergencyClick, onBookAppointme
           <label style={{ fontSize: '0.8rem', color: 'var(--hf-text-muted)', fontWeight: '700' }}>City / Region</label>
           <select className="select-field" value={city} onChange={(e) => setCity(e.target.value)} style={{ marginTop: '6px', padding: '9px', fontSize: '0.88rem' }}>
             <option value="" style={{ background: '#0b1325' }}>All Cities</option>
+            <option value="Chennai" style={{ background: '#0b1325' }}>Chennai</option>
             <option value="Hyderabad" style={{ background: '#0b1325' }}>Hyderabad</option>
             <option value="New Delhi" style={{ background: '#0b1325' }}>New Delhi</option>
             <option value="Visakhapatnam" style={{ background: '#0b1325' }}>Visakhapatnam</option>
